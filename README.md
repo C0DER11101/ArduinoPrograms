@@ -1,6 +1,6 @@
 # Arduino programming
 
-* [Link](https://www.youtube.com/playlist?list=PLGs0VKk2DiYw-L-RibttcvK-WBZm8WLEP).
+* This is preparation for mini-project of $7^{th}$ semester.
 
 <p align="center">
 &#9678; &#9678; &#9678;
