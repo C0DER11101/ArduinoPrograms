@@ -1,0 +1,1 @@
+https://arduino.stackexchange.com/questions/54534/how-to-get-ppm-value-from-mq-3
