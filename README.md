@@ -9,6 +9,10 @@
 * Source-1: [https://ai.thestempedia.com/docs/evive-iot-kit/interfacing-mq-3-gas-sensor-with-evive/](https://ai.thestempedia.com/docs/evive-iot-kit/interfacing-mq-3-gas-sensor-with-evive/).
 * Source-2: [https://www.youtube.com/watch?v=I7X39y8dqGE&t=433s](https://www.youtube.com/watch?v=I7X39y8dqGE&t=433s).
 
+**Some files that I found:**
+
+* [http://www.mecinca.net/ALCOHOLIMETROS_Alcosim/BAC%20BrAC%20conversion%20table%5b1%5d.pdf](http://www.mecinca.net/ALCOHOLIMETROS_Alcosim/BAC%20BrAC%20conversion%20table%5b1%5d.pdf).
+
 * Some terms:
 	* `Vin` $\rightarrow$ The input voltage for the sensor which is $5V$.
 	* `Vout` $\rightarrow$ The analog reading from the sensor when converted to volts.
