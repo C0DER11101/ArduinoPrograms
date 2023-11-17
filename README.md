@@ -12,6 +12,7 @@
 **Some files that I found:**
 
 * [http://www.mecinca.net/ALCOHOLIMETROS_Alcosim/BAC%20BrAC%20conversion%20table%5b1%5d.pdf](http://www.mecinca.net/ALCOHOLIMETROS_Alcosim/BAC%20BrAC%20conversion%20table%5b1%5d.pdf).
+* [https://acoptex.com/wp/arduino-guide-for-mq3-alcohol-sensor/#:~:text=Now%20to%20calibrate%20the%20sensor%2C%20blow%20your%20alcohol,back%20counterclockwise%20just%20until%20the%20LED%20goes%20OFF.](https://acoptex.com/wp/arduino-guide-for-mq3-alcohol-sensor/#:~:text=Now%20to%20calibrate%20the%20sensor%2C%20blow%20your%20alcohol,back%20counterclockwise%20just%20until%20the%20LED%20goes%20OFF.).
 
 * Some terms:
 	* `Vin` $\rightarrow$ The input voltage for the sensor which is $5V$.
