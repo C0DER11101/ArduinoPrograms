@@ -50,7 +50,7 @@
 * Here is the [download link](http://www.java2s.com/Code/Jar/r/Downloadrxtx217jar.htm).
 * Download the zip file to a location of your choice and extract it to any location of your choice.
 * Now, if you are on Linux, go to your `.bashrc` file and write this command:
-	* `export PATH_TO_JAR=<path to your the unzipped jar file>
+	* `export PATH_TO_JAR=<path to your the unzipped jar file>`
 	* After that, save and quit from your ide/editor and use the command: `source ~/.bashrc`.
 * Now, to compile your java program, you will use the command as provided in [here](https://stackoverflow.com/questions/6066257/how-to-compile-java-program-with-jar-library):
 	* `javac -cp $PATH_TO_JAR <yourJavaProgram.java>`. `cp` stands for _classpath_.
