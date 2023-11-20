@@ -54,7 +54,7 @@
 	* After that, save and quit from your ide/editor and use the command: `source ~/.bashrc`.
 * Now, to compile your java program, you will use the command as provided in [here](https://stackoverflow.com/questions/6066257/how-to-compile-java-program-with-jar-library):
 	* `javac -cp $PATH_TO_JAR <yourJavaProgram.java>`. `cp` stands for _classpath_.
-	* Running the program is simpl: `java <yourJavaProgram>`
+	* Running the program is simple: `java <yourJavaProgram>`
 
 <p align="center">
 &#9678; &#9678; &#9678;
