@@ -4,7 +4,7 @@
 
 #define mq3 A0
 
-float R0=0.22;
+float R0=0.25;
 float Rs;
 float RsR0Ratio;
 float Vout=0.;
@@ -19,7 +19,7 @@ float ppm;
 void setup(){
 	pinMode(A0, INPUT);
 	Serial.begin(9600);
-	delay(120000);  // wait for 2 mins
+	//delay(120000);  // wait for 2 mins
 }
 
 void loop(){
