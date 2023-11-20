@@ -44,6 +44,18 @@
 	* From here, I get `m` to be $-0.65$.
 	* For calculating `b`, we need to choose one more point from the alcohol line of the graph. I chose $(4,0.2)$. We will use the formula: `b=log(y)-m*log(x)` to calculate the value of `b`. The value of `b` which I got is: $-0.31$.
 
+# Collecting sensor data from arduino using Java.
+
+* For this, `gnu.io` package is required.
+* Here is the [download link](http://www.java2s.com/Code/Jar/r/Downloadrxtx217jar.htm).
+* Download the zip file to a location of your choice and extract it to any location of your choice.
+* Now, if you are on Linux, go to your `.bashrc` file and write this command:
+	* `export PATH_TO_JAR=<path to your the unzipped jar file>
+	* After that, save and quit from your ide/editor and use the command: `source ~/.bashrc`.
+* Now, to compile your java program, you will use the command as provided in [here](https://stackoverflow.com/questions/6066257/how-to-compile-java-program-with-jar-library):
+	* `javac -cp $PATH_TO_JAR <yourJavaProgram.java>`. `cp` stands for _classpath_.
+	* Running the program is simpl: `java <yourJavaProgram>`
+
 <p align="center">
 &#9678; &#9678; &#9678;
 </p>
