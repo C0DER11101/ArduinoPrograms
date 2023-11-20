@@ -30,12 +30,12 @@ float R0=0.;
 void setup(){
 	pinMode(mq3, INPUT);
 	Serial.begin(9600);
-	delay(60000);  // wait for 1 min
+	//delay(60000);  // wait for 1 min
 }
 
 void loop(){
 	for(int i=0; i<100; i++){
-		vout+=analogRead(mq3);
+		vout=vout+analogRead(mq3);
 	}
 
 	avgVout=vout/100.; // average analog readings
@@ -49,7 +49,7 @@ void loop(){
 	R0=Rs/60;
 	Serial.print("  R0 = ");
 	Serial.println(R0);
-	delay(3000);
+	delay(100);
 	vout=0.;
 	Vout=0.;
 	Rs=0.;
