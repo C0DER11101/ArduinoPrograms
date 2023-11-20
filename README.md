@@ -35,7 +35,7 @@
 
 * <ins>Step-3</ins>
 	* Use the value of `R0` (obtained in the previous step) to find out the concentration of the gas in ppm. I got the value of `R0` to be $0.22$
-	* For this step, you only need one analog reading.
+	* For this step, you only need one analog reading(you might go for more than one analog reading).
 	* Convert the obtained analog reading into volts using the formula given in step-1.
 	* Now, calculate `Rs`.
 	* Use this linear equation: `y=mx+b`, but since the graph from this [datasheet](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf) is a log-log graph, the formula will become: `log(y)=m*log(x)+b`.
