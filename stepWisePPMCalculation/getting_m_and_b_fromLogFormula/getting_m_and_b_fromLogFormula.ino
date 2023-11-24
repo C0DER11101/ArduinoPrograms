@@ -7,7 +7,7 @@ Since the graph is in log-log scale, the formula will look like this:
 	log(y)=m*log(x)+b
 The log is base 10.
 
-From the graph I will chose the points:
+From the graph I chose the points:
 
 x0 = 0.1
 y0 = 2.4
