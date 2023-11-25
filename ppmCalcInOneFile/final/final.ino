@@ -44,6 +44,7 @@ void setup() {
 	pinMode(mq3, INPUT);
 	pinMode(LED, OUTPUT);
 	start=millis();
+	delay(10000);   // wait for 10 seconds
 }
 
 void loop() {
@@ -78,6 +79,14 @@ void loop() {
 	Serial.print(" ppm = ");
 	Serial.println(ppm);
 	analogReads=0;
+
+	if(ppm > 3) {
+		digitalWrite(LED, HIGH);
+	}
+
+	else {
+		digitalWrite(LED, LOW);
+	}
 }
 
 // calculating R0
