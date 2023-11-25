@@ -39,6 +39,8 @@
 	* Now choose $(x,y)$, $(x0,y0)$ from the graph corresponding to the gas of your choice(mine is alcohol).
 	* Calculate the value of `m` as: `m=(log(y) - log(y0)) / (log(x) - log(x0))`. If we apply the rules of logarithmic subtraction then the equation becomes: `m=log(y/y0) / log(x/x0)`.
 	* For calculating `b`, we need to choose one more point from the alcohol line of the graph. We will use the formula: `b=log(y)-m*log(x)` to calculate the value of `b`.
+ 	* Now, we will use `m`, `b` and `R0` to calculate the ppm value.
+    	* Find the ratio: `Rs/R0` and find the formula: `ppm=10^{(log(Rs/R0)-b)/m}`.
 
 # Collecting sensor data from arduino using Java.
 
