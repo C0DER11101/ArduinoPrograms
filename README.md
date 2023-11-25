@@ -25,7 +25,7 @@
 	* Calculate the $R_0$ value. For that you need to find out $R_s$.
 	* Note that for this step, you have to take the analog readings for certain times and then calculate the average of those obtained analog readings.
 	* Convert the average into volts using this formula: $(5/1023) \times analogReadings$.
-	* Then calculate $R_s$ using this formula: $(Vin-Vout)/Vout$.
+	* Then calculate $R_s$ using this formula: $(V_{in}-V_{out})/V_{out}$.
 
 * <ins>Step-2</ins>
 	* Calculate the value of $R_0$ using this formula: $R_s/R_0=60$.
