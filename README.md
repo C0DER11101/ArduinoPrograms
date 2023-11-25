@@ -37,7 +37,7 @@
 	* Now, calculate `Rs`.
 	* Use this linear equation: `y=mx+b`, but since the graph from this [datasheet](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf) is a log-log graph, the formula will become: `log(y)=m*log(x)+b`.
 	* Now choose $(x,y)$, $(x0,y0)$ from the graph corresponding to the gas of your choice(mine is alcohol).
-	* Calculate the value of `m`.
+	* Calculate the value of `m` as: `m=(log(y) - log(y0)) / (log(x) - log(x0))`. If we apply the rules of logarithmic subtraction then the equation becomes: `m=log(y/y0) / log(x/x0)`.
 	* For calculating `b`, we need to choose one more point from the alcohol line of the graph. We will use the formula: `b=log(y)-m*log(x)` to calculate the value of `b`.
 
 # Collecting sensor data from arduino using Java.
