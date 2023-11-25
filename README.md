@@ -37,7 +37,7 @@
 	* Now, calculate `Rs`.
 	* Use this linear equation: $y=mx+b$, but since the graph from this [datasheet](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf) is a log-log graph, the formula will become: $\log_{10}(y)=m\times\log_{10}(x)+b$.
 	* Now choose $(x,y)$, $(x_0,y_0)$ from the graph corresponding to the gas of your choice(mine is alcohol).
-	* Calculate the value of `m` as: $m=(\log_{10}(y) - \log_{10}(y_0)) / (\log_{10}(x) - \log_{10}(x_0))`. If we apply the rules of logarithmic subtraction then the equation becomes: $m=\log_{10}(y/y_0) / \log_{10}(x/x_0)$.
+	* Calculate the value of `m` as: $m=(\log_{10}(y) - \log_{10}(y_0)) / (\log_{10}(x) - \log_{10}(x_0))$. If we apply the rules of logarithmic subtraction then the equation becomes: $m=\log_{10}(y/y_0) / \log_{10}(x/x_0)$.
 	* For calculating `b`, we need to choose one more point from the alcohol line of the graph. We will use the formula: $b=\log_{10}(y)-m\times\log_{10}(x)$ to calculate the value of `b`.
  	* Now, we will use `m`, `b` and `R0` to calculate the ppm value.
     	* Find the ratio: $R_s/R_0$ and find the formula: $ppm=10^{(\log_{10}(R_s/R_0)-b)/m}$.
