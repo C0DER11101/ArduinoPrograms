@@ -13,7 +13,6 @@
 
 * [http://www.mecinca.net/ALCOHOLIMETROS_Alcosim/BAC%20BrAC%20conversion%20table%5b1%5d.pdf](http://www.mecinca.net/ALCOHOLIMETROS_Alcosim/BAC%20BrAC%20conversion%20table%5b1%5d.pdf).
 * [https://acoptex.com/wp/arduino-guide-for-mq3-alcohol-sensor/#:~:text=Now%20to%20calibrate%20the%20sensor%2C%20blow%20your%20alcohol,back%20counterclockwise%20just%20until%20the%20LED%20goes%20OFF.](https://acoptex.com/wp/arduino-guide-for-mq3-alcohol-sensor/#:~:text=Now%20to%20calibrate%20the%20sensor%2C%20blow%20your%20alcohol,back%20counterclockwise%20just%20until%20the%20LED%20goes%20OFF.).
-* [Manual](https://cdn.sparkfun.com/datasheets/Sensors/Biometric/MQ-3%20ver1.3%20-%20Manual.pdf).
 
 * Some terms:
 	* `Vin` $\rightarrow$ The input voltage for the sensor which is $5V$.
@@ -35,15 +34,14 @@
 	* Calculate the value of `R0` using this formula: `Rs/R0=60`.
 
 * <ins>Step-3</ins>
-	* Use the value of `R0` (obtained in the previous step) to find out the concentration of the gas in ppm. I got the value of `R0` to be $0.22$
+	* Use the value of `R0` (obtained in the previous step) to find out the concentration of the gas in ppm.
 	* For this step, you only need one analog reading(you might go for more than one analog reading).
 	* Convert the obtained analog reading into volts using the formula given in step-1.
 	* Now, calculate `Rs`.
 	* Use this linear equation: `y=mx+b`, but since the graph from this [datasheet](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf) is a log-log graph, the formula will become: `log(y)=m*log(x)+b`.
 	* Now choose $(x,y)$, $(x0,y0)$ from the graph corresponding to the gas of your choice(mine is alcohol).
-	* For me, I chose $x0=0.1$, $y0=2.4$, $x=10$ and $y=0.12$.
-	* From here, I get `m` to be $-0.65$.
-	* For calculating `b`, we need to choose one more point from the alcohol line of the graph. I chose $(4,0.2)$. We will use the formula: `b=log(y)-m*log(x)` to calculate the value of `b`. The value of `b` which I got is: $-0.31$.
+	* Calculate the value of `m`.
+	* For calculating `b`, we need to choose one more point from the alcohol line of the graph. We will use the formula: `b=log(y)-m*log(x)` to calculate the value of `b`.
 
 # Collecting sensor data from arduino using Java.
 
