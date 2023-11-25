@@ -2,9 +2,6 @@
 
 * This is preparation for mini-project of $7^{th}$ semester.
 
-**Problems I am facing:**
-* I have to calculate the ppm value from analog value returned by `analogRead()` method.
-
 ## Important: <ins>Calculating the ppm value from analog readings of MQ3 sensor</ins>
 * Source-1: [https://ai.thestempedia.com/docs/evive-iot-kit/interfacing-mq-3-gas-sensor-with-evive/](https://ai.thestempedia.com/docs/evive-iot-kit/interfacing-mq-3-gas-sensor-with-evive/).
 * Source-2: [https://www.youtube.com/watch?v=I7X39y8dqGE&t=433s](https://www.youtube.com/watch?v=I7X39y8dqGE&t=433s).
