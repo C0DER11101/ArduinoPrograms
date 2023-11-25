@@ -16,7 +16,7 @@
 	* `Vout` $\rightarrow$ The analog reading from the sensor when converted to volts.
 	* `Rs` $\rightarrow$ resistance of the sensor that changes depending on the concentration of the gas.
 	* `R0` $\rightarrow$ resistance of the sensor at a known concentration without presence of other gases, or in the fresh air.
-* For fresh air: `Rs/R0 = 60`.
+* For fresh air: $R_s/R_0 = 60$.
 
 ---
 
@@ -24,23 +24,23 @@
 * <ins>Step-1</ins>
 	* Calculate the `R0` value. For that you need to find out `Rs`.
 	* Note that for this step, you have to take the analog readings for certain times and then calculate the average of those obtained analog readings.
-	* Convert the average into volts using this formula: `(5/1023) * analogReadings`.
-	* Then calculate `Rs` using this formula: `(5-Vout)/Vout`.
+	* Convert the average into volts using this formula: $(5/1023) \times analogReadings$.
+	* Then calculate `Rs` using this formula: $(Vin-Vout)/Vout$.
 
 * <ins>Step-2</ins>
-	* Calculate the value of `R0` using this formula: `Rs/R0=60`.
+	* Calculate the value of `R0` using this formula: $R_s/R_0=60$.
 
 * <ins>Step-3</ins>
 	* Use the value of `R0` (obtained in the previous step) to find out the concentration of the gas in ppm.
 	* For this step, you only need one analog reading(you might go for more than one analog reading).
 	* Convert the obtained analog reading into volts using the formula given in step-1.
 	* Now, calculate `Rs`.
-	* Use this linear equation: `y=mx+b`, but since the graph from this [datasheet](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf) is a log-log graph, the formula will become: `log(y)=m*log(x)+b`.
-	* Now choose $(x,y)$, $(x0,y0)$ from the graph corresponding to the gas of your choice(mine is alcohol).
-	* Calculate the value of `m` as: `m=(log(y) - log(y0)) / (log(x) - log(x0))`. If we apply the rules of logarithmic subtraction then the equation becomes: `m=log(y/y0) / log(x/x0)`.
-	* For calculating `b`, we need to choose one more point from the alcohol line of the graph. We will use the formula: `b=log(y)-m*log(x)` to calculate the value of `b`.
+	* Use this linear equation: $y=mx+b$, but since the graph from this [datasheet](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf) is a log-log graph, the formula will become: $\log_{10}(y)=m\times\log_{10}(x)+b$.
+	* Now choose $(x,y)$, $(x_0,y_0)$ from the graph corresponding to the gas of your choice(mine is alcohol).
+	* Calculate the value of `m` as: $m=(\log_{10}(y) - \log_{10}(y_0)) / (\log_{10}(x) - \log_{10}(x_0))`. If we apply the rules of logarithmic subtraction then the equation becomes: $m=\log_{10}(y/y_0) / \log_{10}(x/x_0)$.
+	* For calculating `b`, we need to choose one more point from the alcohol line of the graph. We will use the formula: $b=\log_{10}(y)-m\times\log_{10}(x)$ to calculate the value of `b`.
  	* Now, we will use `m`, `b` and `R0` to calculate the ppm value.
-    	* Find the ratio: `Rs/R0` and find the formula: `ppm=10^{(log(Rs/R0)-b)/m}`.
+    	* Find the ratio: $R_s/R_0$ and find the formula: $ppm=10^{(\log_{10}(R_s/R_0)-b)/m}$.
 
 # Collecting sensor data from arduino using Java.
 
