@@ -41,19 +41,3 @@
 	* For calculating $b$, we need to choose one more point from the alcohol line of the graph. We will use the formula: $b=\log_{10}(y)-m\times\log_{10}(x)$ to calculate the value of $b$.
  	* Now, we will use $m$, $b$ and $R_0$ to calculate the ppm value.
     	* Find the ratio: $R_s/R_0$ and find the formula: $ppm=10^{(\log_{10}(R_s/R_0)-b)/m}$.
-
-# Collecting sensor data from arduino using Java.
-
-* For this, `gnu.io` package is required.
-* Here is the [download link](http://www.java2s.com/Code/Jar/r/Downloadrxtx217jar.htm).
-* Download the zip file to a location of your choice and extract it to any location of your choice.
-* Now, if you are on Linux, go to your `.bashrc` file and write this command:
-	* `export PATH_TO_JAR=<path to your the unzipped jar file>`
-	* After that, save and quit from your ide/editor and use the command: `source ~/.bashrc`.
-* Now, to compile your java program, you will use the command as provided in [here](https://stackoverflow.com/questions/6066257/how-to-compile-java-program-with-jar-library):
-	* `javac -cp $PATH_TO_JAR <yourJavaProgram.java>`. `cp` stands for _classpath_.
-	* Running the program is simple: `java <yourJavaProgram>`
-
-<p align="center">
-&#9678; &#9678; &#9678;
-</p>
